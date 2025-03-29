@@ -2,14 +2,14 @@
 using namespace std;
 
 int main() {
-    // Variables básicas
+    // Variables
     int num_vertices, num_caras;
     
     // Pedir vértices
     cout << "Cuantos vertices?: ";
     cin >> num_vertices;
     
-    float vertices[num_vertices][3]; // [x, y, z] para cada vértice
+    float vertices[num_vertices][3];
     
     for(int i = 0; i < num_vertices; i++) {
         cout << "Vertice " << i+1 << " (x y z): ";
@@ -20,7 +20,7 @@ int main() {
     cout << "\nCuantas caras?: ";
     cin >> num_caras;
     
-    int caras[num_caras][10]; // Máximo 10 vértices por cara (ajustable)
+    int caras[num_caras][10];
     int vertices_por_cara[num_caras];
     
     for(int i = 0; i < num_caras; i++) {
